@@ -27,9 +27,15 @@ Primeiro preciso concordar com minha equipe se um desses conteudos é interessen
 
 [Vinicius ]
 
-1. O Abismo Público vs. Privado (escola publica x Escola privada)
+1. **O Abismo Público vs. Privado (escola publica x Escola privada)**: [ Em Andamento ]
 
-2. O Perfil da Abstenção (Quem se inscreve e não faz a prova)
+2. **O Perfil da Abstenção (Quem se inscreve e não faz a prova)**: [ Feito ]
+
+3. **Perfil Etário dos Canditatos**: [ Feito ]
+
+4. **Renda Familiar e Desigualdade**: [ Feito ]
+
+5. **Perfil etário dos candidatos**: Investigar a possibildiade de relaciona presença com renda, raça e tipo de escola. [ Feito ]
 
 **_Oq vamos fazer quando o CSV baixar (bgl grande)_**
 
@@ -54,6 +60,9 @@ Primeiro preciso concordar com minha equipe se um desses conteudos é interessen
   }
   ```
 
+- É adequado trabalhar com DataFrames separados? Usamos df para PARTICIPANTES_2025 e df_resultados para RESULTADOS_2025, porque as bases possuem informações diferentes.
+
+- Qual seria a melhor forma de otimizar o carregamento e processamento de diferentes arquivos CSV muito grandes, com vários GB, sem consumir memória excessiva?
 ---
 
 ### Paginas do BI
@@ -61,6 +70,7 @@ Primeiro preciso concordar com minha equipe se um desses conteudos é interessen
 - **Escola pública x privada** — o clássico, mas é clássico porque sempre entrega uma "problemática" forte e visual: diferença de desempenho por `TP_DEPENDENCIA_ADM_ESC`, separado por área de conhecimento. Ótimo gráfico de barras agrupadas.
 - **Urbano x rural** (`TP_LOCALIZACAO_ESC`) — desigualdade de acesso, tema forte pra "extensão" com viés social.
 - **Taxa de ausência/abstenção** (`TP_PRESENCA_*`) — quantos % dos inscritos efetivamente compareceram, comparado por UF ou tipo de escola. Isso é uma problemática em si (evasão do próprio exame), fácil de explicar num slide.
+- **Situação de presença nos dois dias** (`TP_PRESENCA_CH` x `TP_PRESENCA_CN`) — categorizar os candidatos entre quem compareceu nos dois dias, faltou nos dois ou compareceu somente em um deles. Complementa a análise geral de abstenção já proposta.
 - **Nota média por competência da redação** (`NU_NOTA_COMP1` a `COMP5`) — qual competência o Brasil vai pior (normalmente competência 4 — coesão/coesão textual). Ótimo gráfico de radar ou barras simples no Power BI.
 - **Escola pública x privada, cruzado com urbano x rural** — 4 grupos, mostra que a desigualdade não é só uma variável isolada, ela se acumula (escola pública rural é o grupo mais vulnerável, tipicamente).
 - **Redação anulada/zerada** (`TP_STATUS_REDACAO` diferente de 1) — quantos candidatos tiveram problema na redação e por qual motivo (cópia do texto motivador, fuga do tema, etc). Bom gráfico de pizza/barras com os motivos.
@@ -68,5 +78,5 @@ Primeiro preciso concordar com minha equipe se um desses conteudos é interessen
 - **Distribuição (não só média)** — histograma de notas por tipo de escola. Média sozinha esconde desigualdade interna; mostrar a distribuição inteira (pública tem cauda mais longa à esquerda, por exemplo) é mais honesto e visualmente forte.
 - **Índice de desigualdade simples** — algo tipo razão entre nota média de escola privada urbana vs pública rural, por UF, pra criar um "ranking de desigualdade educacional" — não é só "quem tem nota mais alta" mas "onde a diferença entre grupos é mais gritante".
 - **Correlação entre taxa de ausência e nota média** — estados/tipos de escola com mais abstenção também têm nota mais baixa entre quem compareceu? (Hipótese: abstenção pode ser um sintoma do mesmo problema estrutural que gera nota baixa.)
-
----
+- **Perfil etário dos candidatos** — apresentar a distribuição dos participantes por faixa etária e relacionar idade com a situação de conclusão do Ensino Médio.
+- **A Brecha Digital e a Renda Familiar** (`Q007` x `Q020`) — analisar como o acesso à internet varia entre as diferentes faixas de renda, verificando se candidatos de menor renda apresentam maior proporção de falta de acesso à internet. Bom para visualizar a relação entre desigualdade econômica e inclusão digital.
