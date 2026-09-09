@@ -17,9 +17,9 @@ Primeiro preciso concordar com minha equipe se um desses conteudos é interessen
 
 1. **Raça/cor x tipo de escola**: `TP_COR_RACA` x `Q023`, mostra se autodeclarados pretos/pardos estão mais concentrados em escola pública [ Feito ]
 
-2. **A Brecha Digital**: `Q020` (quem tem ou não tem acesso a internet) [ Feito por partes]
+2. **A Brecha Digital**: `Q020` (quem tem ou não tem acesso a internet) [ Feito]
 
-3. Municípios / UF que se candidataram a realizar o exame [ Feito ]
+3. **Municípios / UF** que se candidataram a realizar o exame [ Feito ]
 
 4. **Escolaridade dos pais x tipo de escola do filho**: `Q001`/`Q002` x `Q023`, será que filho de pai/mãe com mais estudo tende mais pra escola particular [ Feito ]
 
@@ -51,6 +51,7 @@ Primeiro preciso concordar com minha equipe se um desses conteudos é interessen
 
 - Acha prudente eu mudar os valores que estão numericos no DF, como o de TP_ESTADO_CIVIL:
   ![[Pasted image 20260902195838.png]]
+
   ```python
   mapa_estado_civil = {
   	0: 'Solteiro(a)',
@@ -63,6 +64,7 @@ Primeiro preciso concordar com minha equipe se um desses conteudos é interessen
 - É adequado trabalhar com DataFrames separados? Usamos df para PARTICIPANTES_2025 e df_resultados para RESULTADOS_2025, porque as bases possuem informações diferentes.
 
 - Qual seria a melhor forma de otimizar o carregamento e processamento de diferentes arquivos CSV muito grandes, com vários GB, sem consumir memória excessiva?
+
 ---
 
 ### Paginas do BI
