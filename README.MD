@@ -2,4 +2,4 @@
 
 Este repositório contém uma análise detalhada do Exame Nacional do Ensino Médio (ENEM) de 2025, focando em dados demográficos e de desempenho dos participantes.
 
-Sendo Desenvolvido por: Gabriel e Vinicius
+Sendo Desenvolvido por: Neves, Vinicius, Nicolas e Gabriel
