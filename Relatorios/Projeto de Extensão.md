@@ -27,7 +27,7 @@ Primeiro preciso concordar com minha equipe se um desses conteudos é interessen
 
 [Vinicius ]
 
-1. **O Abismo Público vs. Privado (escola publica x Escola privada)**: [ Em Andamento ]
+1. **O Abismo Público vs. Privado (escola publica x Escola privada)**: [ Feito ]
 
 2. **O Perfil da Abstenção (Quem se inscreve e não faz a prova)**: [ Feito ]
 
@@ -48,7 +48,7 @@ Primeiro preciso concordar com minha equipe se um desses conteudos é interessen
 ---
 
 ### Coisas para perguntar pro prfoessor:
-
+s
 - Acha prudente eu mudar os valores que estão numericos no DF, como o de TP_ESTADO_CIVIL:
   ![[Pasted image 20260902195838.png]]
 
